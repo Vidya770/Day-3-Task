@@ -1,0 +1,103 @@
+*For the given JSON itrate over  all for loops(for,for in,for of,for each)
+ANS:
+_For
+The value is first set with an appropriate condition, which is also called 
+initializing a loop. Next, the terminal or final value is specified. 
+The For Loop makes things really easy when you need to run a set of codes 
+multiple times.
+syntax
+for(initiliazation;condition;increment/decrement)
+//for loop
+for(var i = 0; i < json.length; i++) {
+    var obj = json[i];
+
+    console.log(obj.id);
+    console.log(obj.msg);
+    console.log(obj.task);
+    console.log(obj.mail);
+}
+_For in
+A for in loop iterates over all enumerable properties of an object.
+syntax
+for(var key in obj)
+example
+var studentDetail={
+  fname:"Abhinav",
+  lname:"Shukla",
+  age:25,
+  email:"abhi123@gmail.com"
+}
+
+for(var key in studentDetail){
+  console.log(key)
+  console.log(studentDetail[key])
+}
+_For of
+forr of loops will iterate over the entire prototype chain, so here we’re 
+using hasOwnProperty to ensure that the property belongs to our res object.
+syntax
+for( var element of arr)
+example
+var cars=["BMW","Volvo","Jeep"]
+for(var element of cars){
+  console.log(element)   
+  }
+  _For each
+  This method is used for looping through an array element
+  syntax
+  son.forEach(function(obj) { console.log(obj.msg); });
+  
+*Create your own resume data in JSON format
+ANS:
+let myResume={
+    "basics": {
+      "name": "Vidya Patil",
+      "email": "pvidya770@gamil.com",
+      "phone": 8080237589,
+      "degree": "B.tech",
+      "location": {
+        "address": "At post Bhose, taluka:Mangalwedha District:Solapur",
+        "postalCode":413322,
+        "city": "Solapur,
+        "state": "Maharastra",
+        "country": "India"
+      },
+      "profiles": [
+        {
+          "website": "https://www.linkedin.com/in/vidya-patil-4ab457226",
+          "github":"https://github.com/Vidya770"
+        }
+      ]
+    },
+    
+     "education": [
+      {
+        "institution": "Sveri's College of engineering Pandhapur",
+        "department": "Electronic and Telecommunication",
+        "studyType": "fulltime",
+        "batch start year": 2018,
+        "batch end year": 2022,
+        "gpa": 9.24,
+      }
+    ],
+    "skills": [
+      {
+        "name": "c,javascript",
+        "level": "beginer",
+        "project": [
+          "IoT based climate monitoring syatem using Ardunio"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Marathi,Hindi,Enlish",
+      }
+    ],
+    "interests": [
+      {
+        "name": "Desire to learn new thing,",
+      }
+    ]
+  }
+  console.log(myResume);
